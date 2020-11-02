@@ -1,0 +1,422 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+:root {
+  --primary: #914aff;
+  --secondary: #ff4a94;
+
+  --main-color: #63517e;
+  --main-bg: #fff;
+}
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  color: var(--main-bg);
+  background: var(--primary);
+  text-shadow: none;
+  mix-blend-mode: exclusion;
+}
+
+::selection {
+  color: var(--main-bg);
+  background: var(--primary);
+  text-shadow: none;
+  mix-blend-mode: exclusion;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+/* ==========================================================================
+   Johan Petrikovsky's custom styles
+   ========================================================================== */
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: var(--main-color);
+  padding-bottom: 80px;
+}
+
+h2 {
+  font-size: 1.9em;
+}
+h3 {
+  font-size: 1.9em;
+}
+h4 {
+  font-size: 1.8em;
+}
+h5 {
+  font-size: 1.7em;
+}
+
+strong {
+  font-weight: 900;
+  color: var(--primary);
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+img {
+  max-width: 100%;
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+ol li {
+  position: relative;
+  list-style-type: none;
+
+  counter-increment: my-awesome-counter;
+}
+ol li::before {
+  font-size: 1.5rem;
+  line-height: 1;
+  display: inline-block;
+  width: 2.1875rem;
+  margin-left: -2.1875rem;
+  vertical-align: text-bottom;
+  content: counter(my-awesome-counter) ". ";
+  color: var(--primary);
+  font-weight: bold;
+}
+
+ol li > p {
+  margin: 0;
+  padding: 0;
+}
+/*
+ol {
+  counter-reset: item;
+  list-style: none;
+}
+ol li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 2.1875rem;
+  margin: 0 0 1.5rem 1.875rem;
+  counter-increment: item;
+}
+
+ol li:before {
+  font-family: FoundersGroteskCond, Arial Narrow, Arial, sans-serif;
+  color: var(--primary);
+  content: counter(item) " ";
+  counter-increment: item;
+  font-size: 1.5rem;
+  line-height: 1;
+  display: inline-block;
+  width: 2.1875rem;
+  margin-left: -2.1875rem;
+  vertical-align: text-bottom;
+} */
+
+p,
+ul,
+.title {
+  padding: 0 7px;
+}
+
+.header {
+  background-color: #914affdb;
+  grid-area: header;
+  position: fixed;
+  bottom: 0;
+  min-height: 44px;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.header-flex-wrapper {
+}
+
+.main-nav {
+  display: none;
+}
+
+.logo {
+  display: none;
+}
+
+.header.visible {
+  height: 100vh;
+}
+
+.header.visible .logo {
+  display: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 7vw;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 5px;
+  font-weight: 100;
+}
+
+.header.visible .main-nav {
+  display: inherit;
+}
+
+.header.visible .main-nav ul {
+  padding: 0;
+  margin: 10px 0;
+  list-style-type: none;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 2;
+}
+
+.main-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.burger-menu-button {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/burger-menu.svg);
+  background-size: cover;
+  text-indent: -9999px;
+  background-color: transparent;
+  border: none;
+}
+
+aside .title {
+  text-align: center;
+}
+
+aside .baseline {
+  font-weight: 900;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-rows: auto auto 10vh;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "main"
+    "aside"
+    "header";
+  margin: 0 auto;
+  grid-gap: 40px;
+}
+
+.wrapper-aside {
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+
+ol li {
+  margin-bottom: 1em;
+}
+
+ol li img {
+  margin-top: 0.5em;
+}
+
+dl dt {
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--primary);
+}
+
+.img-wrapper {
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.img-wrapper img {
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 0 15px 0px #914aff7a;
+}
+
+.article-wrapper {
+  margin-bottom: 2em;
+}
+
+.title {
+  color: var(--primary);
+  letter-spacing: 0.1em;
+  font-weight: 100;
+}
+
+.wrapper-title {
+  position: sticky;
+  top: 3px;
+  z-index: 20;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7px;
+  margin: 0 0 2em 0;
+
+  background-color: var(--main-bg);
+  border: 1px solid var(--primary);
+  box-shadow: 7px 7px var(--primary);
+}
+
+.wrapper-title .best-price {
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.title.product {
+  font-weight: bold;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+.title strong {
+  font-weight: 900;
+  letter-spacing: initial;
+}
+
+.buy {
+  position: relative;
+  display: inline-block;
+  border: none;
+  padding: 0.5em 1em 0.5em 1.5em;
+  margin: 1em 0 2em;
+
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  background-color: var(--secondary);
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1140px) {
+  .main-grid {
+    grid-template-columns: 7vw 3fr 1fr 7vw;
+    grid-template-rows: 50px auto;
+    grid-template-areas:
+      "header header header header"
+      "borderleft main aside borderright";
+  }
+
+  .header {
+    position: relative;
+    padding: 0 1vw;
+    bottom: initial;
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid #f7e3ff;
+    box-shadow: 0 0 8px 0px #914aff52;
+    box-sizing: border-box;
+  }
+
+  .header-flex-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-weight: 100;
+    color: var(--primary);
+    letter-spacing: 2px;
+  }
+
+  main {
+    grid-area: main;
+    max-width: 840px;
+  }
+
+  section {
+    margin-bottom: 3em;
+  }
+
+  aside {
+    padding-top: 100vh;
+    grid-area: aside;
+  }
+
+  /* --- NAV --- */
+  .main-nav {
+    display: inherit;
+  }
+
+  .main-nav ul {
+    list-style-type: none;
+  }
+
+  .main-nav ul li {
+    display: inline-flex;
+    margin-left: 20px;
+  }
+
+  .main-nav ul li a {
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+
+  /* --- MENU --- */
+  .burger-menu-button {
+    display: none;
+  }
+
+  /* --- TEXT --- */
+  h1 {
+    padding-top: 0;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .buy {
+    display: block;
+    max-width: 215px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .main-grid {
+    grid-template-columns: 15vw 3fr 1fr 15vw;
+  }
+}
