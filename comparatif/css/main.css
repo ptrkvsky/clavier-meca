@@ -97,31 +97,6 @@ ol li > p {
   margin: 0;
   padding: 0;
 }
-/*
-ol {
-  counter-reset: item;
-  list-style: none;
-}
-ol li {
-  position: relative;
-  list-style-type: none;
-  padding-left: 2.1875rem;
-  margin: 0 0 1.5rem 1.875rem;
-  counter-increment: item;
-}
-
-ol li:before {
-  font-family: FoundersGroteskCond, Arial Narrow, Arial, sans-serif;
-  color: var(--primary);
-  content: counter(item) " ";
-  counter-increment: item;
-  font-size: 1.5rem;
-  line-height: 1;
-  display: inline-block;
-  width: 2.1875rem;
-  margin-left: -2.1875rem;
-  vertical-align: text-bottom;
-} */
 
 p,
 ul,
@@ -141,9 +116,6 @@ ul,
   justify-content: center;
   align-items: center;
   transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045);
-}
-
-.header-flex-wrapper {
 }
 
 .main-nav {
