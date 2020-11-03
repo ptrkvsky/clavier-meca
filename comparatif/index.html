@@ -863,44 +863,40 @@
     ></script>
 
     <script type="application/ld+json">
-      ({
-        "@context": "http://schema.org/",
-        "@type": "Product",
-        "brand": {
-          "@type": "Thing",
-          "name": "Razer"
-        },
-        "name": "Razer Blackwidow Elite",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/71hCLKTYF8L._AC_SX679_.jpg",
-        "description": "Clavier Mécanique Razer pas cher et silencieux",
-        "productId": "asin:B07DS5195W",
-        "offers": {
-          "@type": "AggregateOffer",
-          "priceCurrency": "EUR",
-          "lowPrice": "129.99",
-          "highPrice": "179.99",
-          "itemCondition": "new"
-        }
-      },
       {
-        "@context": "http://schema.org/",
-        "@type": "Product",
-        "brand": {
-          "@type": "Thing",
-          "name": "Corsair"
-        },
-        "name": "Corsair Clavier Gaming Mécanique K100 RGB",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/71hCLKTYF8L._AC_SX679_.jpg",
-        "description": "Corsair Clavier Gaming Mécanique K100 RGB, Rétroéclairage LED RGB, Switchs Cherry MX Speed, Noir",
-        "productId": "asin:B08JRJY6FG",
-        "offers": {
-          "@type": "AggregateOffer",
-          "priceCurrency": "EUR",
-          "lowPrice": "249.99",
-          "highPrice": "249.99",
-          "itemCondition": "new"
-        }
-      })
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://clavier-meca.com/#website",
+            "url": "https://clavier-meca.com/",
+            "name": "Clavier-meca.com",
+            "description": "Guide d'achat. Tests / Avis et comparatif des meilleurs claviers gamers et claviers meca"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://clavier-meca.com/#primaryimage",
+            "url": "https://www.clavier-meca.com/img/clavier-gamer.jpg",
+            "width": 594,
+            "height": 396,
+            "caption": "clavier gamer pas cher"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://clavier-meca.com/#webpage",
+            "url": "https://clavier-meca.com/",
+            "inLanguage": "en-US",
+            "name": "Comparatif 2020 des meilleurs clavier gamer tous les prix",
+            "isPartOf": { "@id": "https://clavier-meca.com/#website" },
+            "primaryImageOfPage": {
+              "@id": "https://clavier-meca.com/#primaryimage"
+            },
+            "datePublished": "2020-11-01T11:33:29+00:00",
+            "dateModified": "2020-11-02T08:03:47+00:00",
+            "description": "Découvrez les meilleurs claviers gamer du moment, dans la catégorie haut de gamme et dans la catégorie d'entrée de gamme. Il y en a pour tous les budgets !"
+          }
+        ]
+      }
     </script>
   </body>
 </html>
