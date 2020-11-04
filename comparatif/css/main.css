@@ -193,6 +193,7 @@ summary .title {
   color: var(--primary);
   font-weight: 900;
   letter-spacing: 0;
+  text-transform: uppercase;
 }
 summary ul {
   list-style-type: none;
