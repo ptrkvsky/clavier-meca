@@ -64,6 +64,7 @@
           title="touches sales clavier gamer"
         />
         <img
+          id="propre"
           src="./img/touches-propres-clavier.jpg"
           alt="touches propres clavier gamer"
           title="touches propres clavier gamer"
@@ -304,46 +305,43 @@
         document.querySelector("#header").classList.toggle("visible");
       }
     </script>
-    <script
-      type="application/ld+json"
-      class="yoast-schema-graph yoast-schema-graph--main"
-    >
+    <script type="application/ld+json">
       {
-        "@context": "https://schema.org",
-        "@graph": [
+        "@context": "https://schema.org/",
+        "@type": "HowTo",
+        "name": "Comment nettoyer son clavier meca ?",
+        "description": "Comment nettoyer son clavier meca, des conseils simples entretenir au quotien et/ou nettoyer en profondeur son clavier meca. Il est important de bien nettoyer son clavier meca pour assurer une grande durée de vie pour des produits souvent de grande qualité.",
+        "image": "https://www.clavier-meca.com/img/touches-propres-clavier.jpg",
+        "totalTime": "PT10M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "EUR",
+          "value": "0"
+        },
+        "tool": {
+          "@type": "HowToTool",
+          "name": "Aspirateur pour clavier"
+        },
+        "step": [
           {
-            "@type": "WebSite",
-            "@id": "https://www.casque-dj.com/#website",
-            "url": "https://www.casque-dj.com/",
-            "name": "Casque-DJ.com",
-            "description": "Guide d&#039;achat. Tests / Avis et comparatif des meilleurs Casques DJ",
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": "https://www.casque-dj.com/?s={search_term_string}",
-              "query-input": "required name=search_term_string"
-            }
+            "@type": "HowToStep",
+            "text": "Débranchez votre clavier"
           },
           {
-            "@type": "ImageObject",
-            "@id": "https://www.casque-dj.com/#primaryimage",
-            "url": "https://www.casque-dj.com/wp-content/uploads/2017/10/sennheiser-HD25-1-II-pas-cher.jpg",
-            "width": 500,
-            "height": 500,
-            "caption": "sennheiser hd25-1 pas cher"
+            "@type": "HowToStep",
+            "text": "Aspirez la poussière avec votre aspirateur pour clavier meca",
+            "image": "https://www.clavier-meca.com/img/aspirateur-clavier.jpg",
+            "name": "Aspiration de la poussière"
           },
           {
-            "@type": "WebPage",
-            "@id": "https://www.casque-dj.com/#webpage",
-            "url": "https://www.casque-dj.com/",
-            "inLanguage": "en-US",
-            "name": "Comparatif 2020 des meilleurs casques DJ \u00e0 tous les prix",
-            "isPartOf": { "@id": "https://www.casque-dj.com/#website" },
-            "primaryImageOfPage": {
-              "@id": "https://www.casque-dj.com/#primaryimage"
-            },
-            "datePublished": "2017-10-17T11:33:29+00:00",
-            "dateModified": "2020-02-14T08:03:47+00:00",
-            "description": "D\u00e9couvrez les meilleurs casques DJ du moment, dans la cat\u00e9gorie haut de gamme et dans la cat\u00e9gorie d'entr\u00e9e de gamme. Il y en a pour tous les budgets !"
+            "@type": "HowToStep",
+            "text": "Nettoyer votre clavier avec un petit chiffon à microfibre légèrement humide bien pour bien détacher les saletés.",
+            "image": "https://www.clavier-meca.com/img/nettoyer-clavier-gamer.jpg",
+            "name": "Chiffon micro fibre clavier meca"
+          },
+          {
+            "@type": "HowToStep",
+            "text": "Séchez votre clavier"
           }
         ]
       }
