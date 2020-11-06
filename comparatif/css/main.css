@@ -41,7 +41,6 @@ body {
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   color: var(--main-color);
-  padding-bottom: 80px;
 }
 
 h2 {
@@ -102,6 +101,20 @@ p,
 ul,
 .title {
   padding: 0 7px;
+}
+
+/* LAYOUT */
+.main-grid {
+  display: grid;
+  grid-template-rows: auto auto 10vh 0;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "main"
+    "aside"
+    "header"
+    "footer";
+  margin: 0 auto;
+  grid-gap: 40px;
 }
 
 .header {
@@ -173,6 +186,17 @@ ul,
   border: none;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary);
+  grid-area: footer;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
+
 aside .title {
   text-align: center;
 }
@@ -206,18 +230,6 @@ summary ul a {
 
 summary ul a:hover {
   color: var(--primary);
-}
-
-.main-grid {
-  display: grid;
-  grid-template-rows: auto auto 10vh;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "main"
-    "aside"
-    "header";
-  margin: 0 auto;
-  grid-gap: 40px;
 }
 
 .wrapper-aside {
@@ -319,10 +331,11 @@ dl dt {
 @media only screen and (min-width: 1140px) {
   .main-grid {
     grid-template-columns: 7vw 3fr 1fr 7vw;
-    grid-template-rows: 50px auto;
+    grid-template-rows: 50px auto 50px;
     grid-template-areas:
       "header header header header"
-      "borderleft main aside borderright";
+      "borderleft main aside borderright"
+      "footer footer footer footer";
   }
 
   .header {
@@ -365,6 +378,10 @@ dl dt {
   aside {
     padding-top: 100vh;
     grid-area: aside;
+  }
+
+  footer {
+    padding: 0 10vh;
   }
 
   /* --- NAV --- */
