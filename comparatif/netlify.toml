@@ -8,15 +8,22 @@
 #     best-practices = 0.5
 #     seo = 0.9
 #     pwa = 0.5
-[context.main.processing.css]
+[build.processing]
+  skip_processing = false
+[build.processing.css]
   bundle = true
   minify = true
-[context.main.processing.html]
+[build.processing.js]
   bundle = true
   minify = true
-[context.main.processing.js]
+[build.processing.html]
   bundle = true
   minify = true
+  pretty_urls = true
+[build.processing.images]
+  compress = true
+
+
 
 [[headers]]
   for = "/*"
