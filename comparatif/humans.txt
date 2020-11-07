@@ -3,13 +3,13 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Johan Petrikovsky -- Développeur Web -- @kovskyD
 
 # THANKS
 
-    <name>
+    Les dieux d'internet
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Netlify, Normalize.css

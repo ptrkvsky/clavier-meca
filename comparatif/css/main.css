@@ -44,6 +44,10 @@ body {
   color: var(--main-color);
 }
 
+h1 {
+  margin-top: 0;
+}
+
 h2 {
   font-size: 1.9em;
 }
@@ -214,6 +218,7 @@ aside .baseline {
   border: 3px solid var(--primary);
   margin: 2em 2vw;
 }
+
 .summary .title {
   color: var(--primary);
   font-weight: 900;
@@ -221,10 +226,12 @@ aside .baseline {
   text-transform: uppercase;
   font-size: max(24px, 2.5vw);
 }
+
 .summary ul {
   list-style-type: none;
   line-height: 1.7;
 }
+
 .summary ul a {
   display: inline-block;
   padding: 5px 0px;
@@ -316,6 +323,49 @@ dl dt {
 .title strong {
   font-weight: 900;
   letter-spacing: initial;
+}
+
+.pros-cons-wrapper {
+  padding: 0 7px;
+}
+
+/* Avantages / Inconvénients */
+.pros-cons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.pros-wrapper,
+.cons-wrapper {
+  width: 100%;
+}
+
+.pros-cons-wrapper ul {
+  margin-left: 2em;
+  list-style-type: none;
+}
+
+.pros-cons-wrapper li {
+  position: relative;
+}
+
+.pros-cons-wrapper li:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: -25px;
+  top: 5px;
+  background-image: url("../img/icons-pros-cons.png");
+  background-size: 30px;
+}
+
+.pros li:before {
+  background-position: center left;
+}
+.cons li:before {
+  background-position: center right;
 }
 
 .buy {
