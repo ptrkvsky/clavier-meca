@@ -433,6 +433,10 @@ dl dt {
   }
 }
 
+.summary ul a {
+  padding: 0;
+}
+
 @media only screen and (min-width: 1440px) {
   .main-grid {
     grid-template-columns: 15vw 3fr 1fr 15vw;
