@@ -212,19 +212,22 @@ aside .baseline {
 .summary {
   padding: 1em;
   border: 3px solid var(--primary);
-  margin-bottom: 2em;
+  margin: 2em 0;
 }
 .summary .title {
   color: var(--primary);
   font-weight: 900;
   letter-spacing: 0;
   text-transform: uppercase;
+  font-size: max(24px, 2.5vw);
 }
 .summary ul {
   list-style-type: none;
   line-height: 1.7;
 }
 .summary ul a {
+  display: inline-block;
+  padding: 5px 0px;
   text-decoration: none;
   transition: all 0.3s var(--primary);
   color: var(--main-color);
