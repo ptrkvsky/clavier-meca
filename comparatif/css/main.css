@@ -196,11 +196,32 @@ ul,
 
 footer {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--primary);
   grid-area: footer;
   color: #fff;
 }
+
+footer nav a {
+  display: inline-block;
+  padding: 0 7px;
+  text-decoration: none;
+}
+footer nav a:hover {
+  text-decoration: underline;
+}
+
+footer .icon_insta {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-image: url(../img/instagram_icon.svg);
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
 footer a {
   color: #fff;
 }
@@ -413,6 +434,34 @@ dl dt {
   text-decoration: none;
 }
 
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  display: block;
+  border: none;
+  width: 100%;
+  border-bottom: 5px solid var(--primary);
+  font-size: 3vw;
+  padding: 10px;
+  margin-bottom: 1em;
+}
+
+.contact button {
+  position: relative;
+  display: inline-block;
+  border: none;
+  padding: 0.5em 1em 0.5em 1.5em;
+  margin: 2em 0 2.5em;
+
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  background-color: var(--secondary);
+  color: #fff;
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 1140px) {
   .main-grid {
     grid-template-columns: 7vw 3fr 1fr 7vw;
@@ -422,6 +471,16 @@ dl dt {
       "borderleft intro intro borderright"
       "borderleft main aside borderright"
       "footer footer footer footer";
+  }
+
+  .main-grid.one-col {
+    grid-template-columns: 7vw auto 7vw;
+    grid-template-rows: 70px auto auto 50px;
+    grid-template-areas:
+      "header header header"
+      "borderleft intro  borderright"
+      "borderleft main borderright"
+      "footer footer footer";
   }
 
   .header {
