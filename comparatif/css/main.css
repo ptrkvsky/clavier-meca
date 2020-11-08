@@ -5,6 +5,10 @@
   --primary: #914aff;
   --secondary: #ff4a94;
 
+  --blue: #07a0c3;
+  --yellow: #fde12d;
+  --red: #dd1c1a;
+
   --main-color: #63517e;
   --main-bg: #fff;
 }
@@ -331,15 +335,13 @@ dl dt {
   letter-spacing: initial;
 }
 
-.pros-cons-wrapper {
-  padding: 0 7px;
-}
-
 /* Avantages / Inconvénients */
 .pros-cons-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2em;
+  padding: 0 7px;
+  margin: 2em 0;
+  gap: 10px;
 }
 
 .pros-wrapper,
@@ -347,9 +349,20 @@ dl dt {
   width: 100%;
 }
 
+.pros-wrapper {
+  border-top: 10px solid var(--blue);
+}
+.cons-wrapper {
+  border-top: 10px solid var(--red);
+}
+
 .pros-cons-wrapper ul {
   margin-left: 2em;
   list-style-type: none;
+}
+
+.pros-cons-wrapper h4 {
+  margin: 1em 0 0.9em;
 }
 
 .pros-cons-wrapper li {
@@ -374,12 +387,22 @@ dl dt {
   background-position: center right;
 }
 
+.title-conclusion {
+  margin: 1em 0;
+}
+
+.conclusion {
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.7;
+}
+
 .buy {
   position: relative;
   display: inline-block;
   border: none;
   padding: 0.5em 1em 0.5em 1.5em;
-  margin: 1em 0 2em;
+  margin: 2em 0 2.5em;
 
   font-size: 20px;
   font-weight: bold;
