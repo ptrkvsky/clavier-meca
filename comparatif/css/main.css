@@ -265,6 +265,12 @@ dl dt {
   color: var(--primary);
 }
 
+.date-publication {
+  font-size: 0.9em;
+  font-style: italic;
+  text-align: center;
+}
+
 .img-wrapper {
   position: relative;
   margin-bottom: 2em;
@@ -277,7 +283,7 @@ dl dt {
 }
 
 .article-wrapper {
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 .title {
