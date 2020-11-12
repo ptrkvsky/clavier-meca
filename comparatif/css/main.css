@@ -266,6 +266,14 @@ aside .baseline {
   line-height: 1.3;
 }
 
+.summary ul li {
+  font-size: 19px;
+}
+
+.summary ul li ul li {
+  font-size: 16px;
+}
+
 .summary ul a:hover {
   color: var(--primary);
 }
@@ -579,6 +587,10 @@ dl dt {
   .summary {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .summary ul {
+    margin-bottom: 1em;
   }
 
   .summary ul a {
