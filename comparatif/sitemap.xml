@@ -9,40 +9,44 @@
 
 <url>
   <loc>https://www.clavier-meca.com/</loc>
-  <lastmod>2020-11-12T16:04:28+00:00</lastmod>
+  <lastmod>2020-11-27T12:34:55+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.clavier-meca.com/meilleur-clavier-developpeur</loc>
-  <lastmod>2020-11-12T16:04:28+00:00</lastmod>
-  <priority>0.95</priority>
-</url>
-<url>
   <loc>https://www.clavier-meca.com/guide-achat</loc>
-  <lastmod>2020-11-12T16:04:28+00:00</lastmod>
+  <lastmod>2020-11-27T12:34:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.clavier-meca.com/comment-entretenir</loc>
-  <lastmod>2020-11-12T16:04:28+00:00</lastmod>
+  <lastmod>2020-11-27T12:34:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.clavier-meca.com/mentions</loc>
-  <lastmod>2020-11-12T16:04:28+00:00</lastmod>
+  <lastmod>2020-11-27T12:34:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.clavier-meca.com/contact</loc>
-  <lastmod>2020-11-12T16:04:28+00:00</lastmod>
+  <lastmod>2020-11-27T12:34:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.clavier-meca.com/plan-du-site</loc>
-  <lastmod>2020-11-12T16:04:28+00:00</lastmod>
+  <lastmod>2020-11-27T12:34:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
+<url>
+  <loc>https://www.clavier-meca.com/clavier-mecanique-definition</loc>
+  <lastmod>2020-11-27T12:34:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.clavier-meca.com/meilleur-clavier-developpeur</loc>
+  <lastmod>2020-11-27T12:34:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
 
 </urlset>
