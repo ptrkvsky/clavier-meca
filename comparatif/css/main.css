@@ -322,8 +322,9 @@ dl dt {
 
 .title {
   color: var(--primary);
-  letter-spacing: 0.1em;
-  font-weight: 100;
+  letter-spacing: 0;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 .wrapper-title {
@@ -529,7 +530,9 @@ dl dt {
     grid-area: main;
     max-width: 840px;
   }
-
+  .one-col main {
+    margin: 0 auto;
+  }
   section {
     margin-bottom: 3em;
   }
@@ -558,9 +561,9 @@ dl dt {
 
   .main-nav ul li a {
     color: var(--main-color);
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0;
   }
 
   /* --- MENU --- */
